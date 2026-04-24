@@ -1,8 +1,11 @@
-import { defineConfig } from '@playwright/test';
+// playwright.config.js
+const { defineConfig } = require('@playwright/test');
 
-export default defineConfig({
+module.exports = defineConfig({
 	use: {
 		browserName: 'chromium',
-		headless: true,
+		launchOptions: {
+			executablePath: '/usr/bin/google-chrome',
+		},
 	},
 });
