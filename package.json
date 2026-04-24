@@ -4,6 +4,7 @@
 	"main": "index.js",
 	"license": "MIT",
 	"devDependencies": {
+		"@playwright/test": "^1.59.1",
 		"@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
 		"@storybook/addon-essentials": "^8.0.5",
 		"@storybook/addon-interactions": "^8.0.5",
@@ -66,14 +67,12 @@
 		"lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
 		"format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
 		"lint:all": "npm run stylelint:fix && npm run lint && npm run format",
+		"pretest": "npx playwright install",
 		"test": "playwright test",
 		"prepare": "husky install",
 		"commit": "npm run test && cz",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
-	},
-	"playwright": {
-		"skipBrowserDownload": true
 	},
 	"eslintConfig": {
 		"extends": [
