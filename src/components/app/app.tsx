@@ -25,7 +25,7 @@ export const App = () => {
 				articleState={articleState}
 				setArticleState={setArticleState}
 			/>
-			<Article {...articleState}/>
+			<Article {...articleState} />
 		</main>
 	);
 };

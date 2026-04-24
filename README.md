@@ -28,7 +28,7 @@ https://github.com/Jeff-tlt/blog-customizer
 
 ## Технологии
 
-
+npm test
 - React
 - TypeScript
 - SCSS (CSS Modules)
