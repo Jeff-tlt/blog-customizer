@@ -4,4 +4,12 @@ module.exports = defineConfig({
 	use: {
 		browserName: 'chromium',
 	},
+	projects: [
+		{
+			name: 'chromium',
+			use: {
+				channel: 'chromium', // 🔥 ВАЖНО
+			},
+		},
+	],
 });
