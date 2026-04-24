@@ -67,7 +67,7 @@
 		"lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
 		"format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
 		"lint:all": "npm run stylelint:fix && npm run lint && npm run format",
-		"pretest": "npx playwright install",
+		"pretest": "npm install && npx playwright install",
 		"test": "playwright test",
 		"prepare": "husky install",
 		"commit": "npm run test && cz",
