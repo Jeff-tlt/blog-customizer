@@ -28,6 +28,7 @@ https://github.com/Jeff-tlt/blog-customizer
 
 ## Технологии
 
+
 - React
 - TypeScript
 - SCSS (CSS Modules)
