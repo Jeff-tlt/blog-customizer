@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { defaultArticleState } from 'src/constants/articleProps';
 
 // Сообщаем вебпаку, что этот файл использует это изображение.
 import plane from 'src/images/plane.png';
@@ -6,9 +7,11 @@ import { Text } from 'src/ui/text';
 
 import styles from './Article.module.scss';
 
-export const Article = () => {
+type Props = typeof defaultArticleState;
+
+export const Article = (props: Props) => {
 	return (
-		<article className={clsx(styles.article)}>
+		<article className={styles.article}>
 			<Text as='h1' size={45} weight={800} uppercase dynamicLite>
 				Портрет Западной Швейцарии
 			</Text>
